@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+defaultTasks 'build'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'linked-list', 'Implementation-Version': '1.0', 'Implementation-Vendor': 'jimmy'
+    }
+}
+
