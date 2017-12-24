@@ -10,6 +10,7 @@ public class DoublyLinkedList<T> {
         private T value;
         private Node<T> previous;
         private Node<T> next;
+
         public Node(T value, Node next, Node previous) {
           this.value = value;
           this.next = next;
@@ -40,6 +41,7 @@ public class DoublyLinkedList<T> {
             head.previous = temp;
         }
         head = temp;
+        if (tail == null) { tail = temp;}
         size++;
         System.out.println(value);
     }
